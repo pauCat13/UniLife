@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #181818;
+    background-image: radial-gradient(rgba(255, 255, 255, 0.171) 2px, transparent 0);
+    background-size: 30px 30px;
+    background-position: -5px -5px;
+    padding: 0 10px; 
+}
+.category-options {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    background-color: #282828;
+    overflow: hidden;
+}
+
+.category-option {
+    padding: 10px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    text-align: center;
+}
+
+.category-option:hover,
+.category-option.selected {
+    background-color: #fff;
+    color: #000;
+}
+
+
+.form-box {
+    position: relative;
+    width: 95%; 
+    max-width: 400px; 
+    background: transparent;
+    border: 2px solid #00d8ff;
+    border-radius: 20px;
+    background-color: #181818;
+    display: flex;
+    flex-direction: column; 
+    padding: 20px;
+}
+
+h2 {
+    font-size: 2em;
+    color: #fff;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.account-type-selector {
+    display: flex;
+    justify-content: space-around;
+    color: grey;
+
+}
+
+.account-type-option {
+    padding: 10px 20px;
+    cursor: pointer;
+    position: relative;
+    transition: color .3s; 
+
+    
+}
+
+.account-type-option:hover,
+.account-type-option.active {
+    color: #ffffff; 
+}
+
+.account-type-option.active::after,
+.account-type-option:hover::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: white; 
+    bottom: 0;
+    left: 0;
+}
+
+.inputbox {
+    position: relative;
+    margin: 30px 0;
+    width: 100%; 
+    border-bottom: 2px solid #fff;
+}
+
+.inputbox label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 1em;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.inputbox input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding: 0 35px 0 5px;
+    color: #fff;
+}
+
+.inputbox input:focus ~ label,
+.inputbox input:not(:placeholder-shown) ~ label {
+    top: -5px; 
+    font-size: 0.9em; 
+}
+.character-count {
+    font-size: 0.8em; /* Smaller text */
+    color: gray;
+    margin-top: -10px; /* Pull it slightly closer to the field */
+    margin-bottom: 20px; /* Add spacing after the count text */
+    text-align: right; /* Align text to the right */
+}
+
+
+button {
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+    color: black;
+}
+
+.register {
+    font-size: 0.9em;
+    color: #fff;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+
+.register p a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+.register p a:hover {
+    text-decoration: underline;
+}
+@media (max-width: 360px) {
+    .account-type-selector {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .account-type-option {
+        margin: 10px 0; 
+        width: 100%; 
+        text-align: center; 
+    }
+}

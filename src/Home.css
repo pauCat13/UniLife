@@ -1,0 +1,42 @@
+/* Home.css */
+
+/**
+ *Resources used for css throught: 
+ * https://www.w3schools.com/css/ - The w3 schools css tutorial
+*/
+
+
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #181818;
+    background-image: radial-gradient(rgba(255, 255, 255, 0.171) 2px, transparent 0);
+    background-size: 30px 30px;
+    background-position: -5px -5px;
+  }
+  
+  .description {
+    text-align: center;
+    padding: 0.5rem 0.5rem;
+    background-color: rgba(51, 51, 51, 0.8);
+    margin-bottom: 1%;
+  }
+
+  .description h1 {
+    font-size: 1.5rem;
+    font-weight: 600; /* Slightly thicker font weight */
+    text-align: center;
+    font-family: 'Arial', sans-serif; /* Optional: specify a cleaner font */
+    color: aliceblue; 
+    margin: 0;
+  }
+  
+  .search-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 80%;
+    justify-content: center;
+    padding: 20px;
+  }

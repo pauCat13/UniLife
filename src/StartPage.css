@@ -1,0 +1,122 @@
+/*StartPage.css*/
+.slideshow-container {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw; 
+    overflow: hidden; 
+    z-index: -1; 
+    background-color: black; 
+  }
+  
+  .slideshow-image {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%; 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    opacity: 0; 
+    transition: opacity 1s ease-in-out; 
+    z-index: 0; 
+    background-color: black; 
+  }
+  
+  .fade-in {
+    opacity: 1; 
+    z-index: 1; 
+  }
+  
+  .fade-out {
+    opacity: 0; 
+    z-index: 0; 
+  }
+  
+  .logo-container {
+    position: fixed; 
+    top: 15%; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    z-index: 10; 
+  }
+  
+  .logo {
+    width: 250px; 
+    height: auto; 
+  }
+  
+  .footer-text {
+    position: fixed; 
+    bottom: 0;
+    left: 0;
+    width: 100%; 
+    color: white; 
+    text-align: center; 
+    font-size: 12px; 
+    font-family: Arial, sans-serif; 
+    padding: 10px; 
+    background: transparent; 
+  }
+  
+  .footer-text a {
+    color: white; 
+    text-decoration: underline; 
+  }
+  
+  .tagline {
+    color: white; 
+    font-size: 16px; 
+    font-weight: 100; 
+    text-align: center; 
+    margin-top: 10px; 
+    font-family: Arial, sans-serif; 
+  }
+  
+  .bullet {
+    margin: 0 10px; 
+    color: white; 
+  }
+  
+  .button-container1 {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    width: 50%; 
+    margin: auto;
+    position: absolute;
+    top: 70%;
+    left: 25%;
+  }
+
+  .button-container2 {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    width: 30%; 
+  }
+  
+  /* Get Started button styling */
+  .get-started-button {
+    text-align: center;
+    align-items: center;
+    font-size: 20px; 
+    color: black;
+    background-color: white; 
+    border: none; 
+    border-radius: 30px; 
+    cursor: pointer; 
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); 
+    font-family: Arial, sans-serif; 
+    transition: all 0.3s ease; 
+  }
+  
+  .get-started-button:hover {
+    background-color: #00d8ff; 
+    border: solid;
+    color: white;
+    transform: scale(1.1); 
+  }
+  
